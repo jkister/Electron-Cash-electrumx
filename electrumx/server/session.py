@@ -642,7 +642,7 @@ class SessionManager(object):
     async def rpc_add_peer(self, real_name):
         '''Add a peer.
 
-        real_name: "bch.electrumx.cash t50001 s50002" for example
+        real_name: "bch.imaginary.cash t50001 s50002" for example
         '''
         await self.peer_mgr.add_localRPC_peer(real_name)
         return "peer '{}' added".format(real_name)
